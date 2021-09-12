@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>chrome open tabs</title>
+    <style>
+        
+        .data-box{
+            width:80%;
+            box-sizing:border-box;
+            margin:5%;
+            padding:10px;
+            background-color: #f1f1f1;
+            box-shadow: 0px 0px 10px 2px #a1a1a1;
+        }
+        .data-box>*{
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <% data.forEach(d=>{ %>
+        <div class="data-box">
+            <h2> <%= d.title %> </h2>
+            <h3><a href="<%= d.url %>"><%= d.url %></a></h3>
+
+        </div>
+    <% }); %>
+</body>
+</html>
